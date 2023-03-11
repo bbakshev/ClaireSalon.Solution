@@ -22,6 +22,9 @@
   @Html.LabelFor(model => model.Service)
   @Html.DropDownListFor(model => model.Service, new SelectList(new[] { "Short Haircut", "Long Haircut", "Coloring", "Perming" }))
 
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId")
+
   <input type="submit" value="Add a new client" class="btn btn-default" />
 }
 
